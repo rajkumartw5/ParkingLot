@@ -1,6 +1,10 @@
-public class Car {
-    private final String licenseNumber;
+public class Car extends Vehicle {
     public Car(String licenseNumber) {
-        this.licenseNumber = licenseNumber;
+        super(licenseNumber);
+    }
+
+    @Override
+    public void park() {
+        System.out.println("Car is parked");
     }
 }
